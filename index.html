@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calc_cpi</title>
+    <link rel="stylesheet" href="cpi.css">
+    <script src="Script.js"></script>
+
+</head>
+<body>
+    <header>
+        <p>  wish you the best of luck</p>
+    </header>
+  <div class="container">
+    <div class="department">
+        <h2>choose department</h2>
+        <select id="branch">
+            <option>CSE</option>
+            <option>EE</option>
+            <option>MTH</option>
+            <option>SDS</option>
+            <option>ECO</option>
+            <option>CHE</option>
+            <option>ME</option>
+            <option>CE</option>
+            <option>BSBE</option>
+            <option>AE</option>
+            <option>MSE</option>
+            <option>PHY</option>
+            <option>CHM</option>
+            <option>ES</option>
+        </select>
+    </div>
+    <div id="spicpi">
+        <div class="gp1">
+            <h3>enter the grades of sem1</h3>
+            <form name="courses_gp1">
+                MTH111: <select id="MTH111" onchange="spi()">
+                    <option value="A*">A*</option>
+                    <option value="A">A</option>
+                    <option value="B+">B+</option>
+                    <option value="B">B</option>
+                    <option value="C+">C+</option>
+                    <option value="C">C</option>
+                    <option value="D+">D+</option>
+                    <option value="D">D</option>
+                    <option value="E">E</option>
+                    <option value="F">F</option>
+                    <option value="I">I</option>
+                </select></br>
+                MTH112: <select id="MTH112" onchange="spi()">
+                    <option value="A*">A*</option>
+                    <option value="A">A</option>
+                    <option value="B+">B+</option>
+                    <option value="B">B</option>
+                    <option value="C+">C+</option>
+                    <option value="C">C</option>
+                    <option value="D+">D+</option>
+                    <option value="D">D</option>
+                    <option value="E">E</option>
+                    <option value="F">F</option>
+                    <option value="I">I</option>
+                </select></br>
+                ELC ........ <select id="ELC" onchange="spi()">
+                    <option value="A*">A*</option>
+                    <option value="A">A</option>
+                    <option value="B+">B+</option>
+                    <option value="B">B</option>
+                    <option value="C+">C+</option>
+                    <option value="C">C</option>
+                    <option value="D+">D+</option>
+                    <option value="D">D</option>
+                    <option value="E">E</option>
+                    <option value="F">F</option>
+                    <option value="I">I</option>
+                </select></br>
+                PHY11_  : <select id="PHY" onchange="spi()">
+                    <option value="A*">A*</option>
+                    <option value="A">A</option>
+                    <option value="B+">B+</option>
+                    <option value="B">B</option>
+                    <option value="C+">C+</option>
+                    <option value="C">C</option>
+                    <option value="D+">D+</option>
+                    <option value="D">D</option>
+                    <option value="E">E</option>
+                    <option value="F">F</option>
+                    <option value="I">I</option>
+                </select></br>
+                CHM112: <select id="CHM112" onchange="spi()">
+                    <option value="A*">A*</option>
+                    <option value="A">A</option>
+                    <option value="B+">B+</option>
+                    <option value="B">B</option>
+                    <option value="C+">C+</option>
+                    <option value="C">C</option>
+                    <option value="D+">D+</option>
+                    <option value="D">D</option>
+                    <option value="E">E</option>
+                    <option value="F">F</option>
+                    <option value="I">I</option>
+                </select></br>
+                CHM 113: <select id="CHM113" onchange="spi()">
+                    <option value="A*">A*</option>
+                    <option value="A">A</option>
+                    <option value="B+">B+</option>
+                    <option value="B">B</option>
+                    <option value="C+">C+</option>
+                    <option value="C">C</option>
+                    <option value="D+">D+</option>
+                    <option value="D">D</option>
+                    <option value="E">E</option>
+                    <option value="F">F</option>
+                    <option value="I">I</option>
+                </select></br>
+                PHY111 : <select id="PHY111" onchange="spi()">
+                    <option value="A*">A*</option>
+                    <option value="A">A</option>
+                    <option value="B+">B+</option>
+                    <option value="B">B</option>
+                    <option value="C+">C+</option>
+                    <option value="C">C</option>
+                    <option value="D+">D+</option>
+                    <option value="D">D</option>
+                    <option value="E">E</option>
+                    <option value="F">F</option>
+                    <option value="I">I</option>
+                </select></br>
+                 TA111  .... <select id="TA" onchange="spi()">
+                    <option value="A*">A*</option>
+                    <option value="A">A</option>
+                    <option value="B+">B+</option>
+                    <option value="B">B</option>
+                    <option value="C+">C+</option>
+                    <option value="C">C</option>
+                    <option value="D+">D+</option>
+                    <option value="D">D</option>
+                    <option value="E">E</option>
+                    <option value="F">F</option>
+                    <option value="I">I</option>
+                </select></br>
+                PE111.... : <select id="PE111" onchange="spi()">
+                    <option>X</option>
+                    <option>S</option>
+                </select></br>
+                SPI : <input type="text" name="SPI1" id="SPI1"><br>
+                <input type="button" value="calculate" onclick="spi()">
+            </form>
+
+        </div>
+
+        <div class="gp1_">
+            <h3>enter the grades of sem2</h3>
+            <form name="courses_gp1_">
+                MTH113: <select id="MTH113" onchange="spi2()">
+                    <option value="A*">A*</option>
+                    <option value="A">A</option>
+                    <option value="B+">B+</option>
+                    <option value="B">B</option>
+                    <option value="C+">C+</option>
+                    <option value="C">C</option>
+                    <option value="D+">D+</option>
+                    <option value="D">D</option>
+                    <option value="E">E</option>
+                    <option value="F">F</option>
+                    <option value="I">I</option>
+                </select></br>
+                MTH114: <select id="MTH114" onchange="spi2()">
+                    <option value="A*">A*</option>
+                    <option value="A">A</option>
+                    <option value="B+">B+</option>
+                    <option value="B">B</option>
+                    <option value="C+">C+</option>
+                    <option value="C">C</option>
+                    <option value="D+">D+</option>
+                    <option value="D">D</option>
+                    <option value="E">E</option>
+                    <option value="F">F</option>
+                    <option value="I">I</option>
+                </select></br>
+                PHY11_.: <select id="PHY_" onchange="spi2()">
+                    <option value="A*">A*</option>
+                    <option value="A">A</option>
+                    <option value="B+">B+</option>
+                    <option value="B">B</option>
+                    <option value="C+">C+</option>
+                    <option value="C">C</option>
+                    <option value="D+">D+</option>
+                    <option value="D">D</option>
+                    <option value="E">E</option>
+                    <option value="F">F</option>
+                    <option value="I">I</option>
+                </select></br>
+                CHM111: <select id="CHM111" onchange="spi2()">
+                    <option value="A*">A*</option>
+                    <option value="A">A</option>
+                    <option value="B+">B+</option>
+                    <option value="B">B</option>
+                    <option value="C+">C+</option>
+                    <option value="C">C</option>
+                    <option value="D+">D+</option>
+                    <option value="D">D</option>
+                    <option value="E">E</option>
+                    <option value="F">F</option>
+                    <option value="I">I</option>
+                </select></br>
+                ESC111  : <select id="ESC111" onchange="spi2()">
+                    <option value="A*">A*</option>
+                    <option value="A">A</option>
+                    <option value="B+">B+</option>
+                    <option value="B">B</option>
+                    <option value="C+">C+</option>
+                    <option value="C">C</option>
+                    <option value="D+">D+</option>
+                    <option value="D">D</option>
+                    <option value="E">E</option>
+                    <option value="F">F</option>
+                    <option value="I">I</option>
+                </select></br>
+                ESC112 : <select id="ESC112" onchange="spi2()">
+                    <option value="A*">A*</option>
+                    <option value="A">A</option>
+                    <option value="B+">B+</option>
+                    <option value="B">B</option>
+                    <option value="C+">C+</option>
+                    <option value="C">C</option>
+                    <option value="D+">D+</option>
+                    <option value="D">D</option>
+                    <option value="E">E</option>
+                    <option value="F">F</option>
+                    <option value="I">I</option>
+                </select></br>
+                LIF111.  : <select id="LIF" onchange="spi2()">
+                    <option value="A*">A*</option>
+                    <option value="A">A</option>
+                    <option value="B+">B+</option>
+                    <option value="B">B</option>
+                    <option value="C+">C+</option>
+                    <option value="C">C</option>
+                    <option value="D+">D+</option>
+                    <option value="D">D</option>
+                    <option value="E">E</option>
+                    <option value="F">F</option>
+                    <option value="I">I</option>
+                </select></br>
+                
+                PE112.. : <select id="PE112" onchange="spi2()">
+                    <option>X</option>
+                    <option>S</option>
+                </select></br>
+                SPI : <input type="text" name="SPI2" id="SPI2"><br>
+                <input type="button" value="calculate" onclick="spi2()">
+            </form>
+            <div class="cpi">
+                <form name="cpisem">
+                    CPI : <input type="text" name="CPI" id="CPI"><br>
+                <input type="button" value="calculate" onclick="cpi()">
+                </form>
+            </div>
+         
+
+          </form>
+        </div>
+    </div>
+  
+  </div>
+
+    
+</body>
+</html>
