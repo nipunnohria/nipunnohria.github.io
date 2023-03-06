@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   background-color: rgb(52, 49, 47);
+}
+header{
+    background-color: rgba(0, 0, 0, 0.2);
+    height: 20vh;
+    width: 100%;
+}
+
+header p{
+    color: rgb(66, 245, 138);
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: center;
+    padding-top: 5vh;
+
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: greenyellow;
+    font-size: large;
+   
+}
+
+select{
+    color: white;
+}
+input{
+    color: white;
+    padding: 10px;
+}
